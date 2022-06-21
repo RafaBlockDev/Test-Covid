@@ -4,6 +4,8 @@
 /// @title Clinic
 
 pragma solidity ^0.8.0;
+/// @dev Import the interface of Clinic
+import "./interface/IClinic.sol";
 
 contract Clinic {
     address public addressClinic;

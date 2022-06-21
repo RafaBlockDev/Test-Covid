@@ -3,7 +3,8 @@
 /// @author Rafael Fuentes Rangel
 /// @title WHO smart contract
 pragma solidity ^0.8.0;
-
+/// @dev Import the WHO interface
+import "./interface/IWHO.sol";
 import "./Clinic.sol";
 
 contract WHO {
