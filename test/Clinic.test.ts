@@ -16,4 +16,9 @@ describe("Clinic", function () {
     const clinic = await Clinic.deploy(who.address);
     await clinic.deployed();
   });
+
+  it("Should return emit succes covid results", async function () {
+    const hashIdPatient = ethers.utils.keccak256(ethers.utils.defaultAbiCoder.encode(["string"], ["RAFA5U9"]));
+    console.log("Patient ID hash 👉 ", hashIdPatient);
+  })
 });
